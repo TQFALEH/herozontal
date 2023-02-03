@@ -1,0 +1,77 @@
+<div *ngIf="!show" class="container mt-5">
+  <div class="row d-flex justify-content-evenly">
+    <div class="  col-lg-3">
+      <div class="ccd">
+        <div class="card border-0 shadow-sm p-2  " style="width: 222px; border-radius: 30px ;">
+          <img src="https://www.pnu.edu.sa/_layouts/15/PNU_Theme/ar-sa/imgs/mainLogoAR.jpg" class="img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Princess Nourah University</h5>
+            <p class="card-text">Riyadh</p>
+            <a (click)="show = !show" routerLink="video" class="btn btn-primary">Enroll</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=" col-lg-3">
+      <div class="ccd">
+        <div class="card  border-0 shadow-sm p-2  " style="width: 222px; border-radius: 30px ;">
+          <img
+            src="https://uj-identity.uj.edu.sa/Images/222/%D8%B4%D8%B9%D8%A7%D8%B1%20%D8%AC%D8%A7%D9%85%D8%B9%D8%A9%20%D8%AC%D8%AF%D8%A9.png"
+            class="img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">University of Jeddah</h5>
+            <p class="card-text">Jeddah</p>
+            <button (click)="show = !show" routerLink="video" class="btn btn-primary">Enroll</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div  class=" col-lg-3">
+      <div class="ccd">
+        <div class="card border-0 shadow-sm p-2  " style="width: 222px; border-radius: 30px ;">
+          <img
+            src="https://www.arabnews.pk/sites/default/files/styles/n_670_395/public/2018/02/13/1100316-400133323.jpg?itok=bXrqVg0s"
+            class="img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">King Saud University</h5>
+            <p class="card-text">Riyadh</p>
+            <a (click)="show = !show" routerLink="video" class="btn btn-primary">Enroll</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=" col-lg-3">
+      <div class="ccd">
+        <div class="card border-0 shadow-sm p-2  " style="width: 222px; border-radius: 30px ;">
+          <img
+            src="https://pbs.twimg.com/profile_images/1367584545307037699/0H0gi-A8_400x400.jpg"
+            class="img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">STC <br> Academy</h5>
+            <p class="card-text">Riyadh</p>
+            <a (click)="show = !show"  routerLink="video" class="btn btn-primary">Enroll</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
+<style>
+  .card-img-top {
+    height: 150px;
+    width: 100%;
+  }
+
+  .ccd {
+
+    height: 30px;
+  }
+
+  img {
+
+
+    height: 100px;
+    object-fit: contain;
+  }
+</style>
